@@ -4,7 +4,8 @@
              (gnu services)
              (gnu packages admin)
              (guix gexp)
-             (gnu packages emacs))
+             (gnu packages emacs)
+             (gnu packages emacs-xyz))
 
 
 (home-environment
