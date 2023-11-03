@@ -4,8 +4,13 @@
              (gnu services)
              (gnu packages admin)
              (guix gexp)
+             (gnu packages compression)
              (gnu packages emacs)
-             (gnu packages emacs-xyz))
+             (gnu packages emacs-xyz)
+             (gnu packages guile)
+             (gnu packages pdf)
+             (gnu packages version-control)
+             (gnu packages video))
 
 
 (home-environment
@@ -14,7 +19,6 @@
                  emacs-use-package
                  emacs-guix
                  guile
-                 guix
                  emacs-no-littering
                  emacs-which-key
                  emacs-smartparens
