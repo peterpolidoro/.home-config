@@ -3,7 +3,8 @@
              (gnu home services shells)
              (gnu services)
              (gnu packages admin)
-             (guix gexp))
+             (guix gexp)
+             (gnu packages emacs))
 
 
 (home-environment
