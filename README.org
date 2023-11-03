@@ -4,4 +4,5 @@ git clone https://github.com/peterpolidoro/.home-config.git
 cd .home-config
 guix home reconfigure home-config.scm
 guix shell -m manifests/emacs.scm
+ln -s ~/.home-config/emacs ~/.config/emacs
 #+END_SRC
