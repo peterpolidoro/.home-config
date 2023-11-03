@@ -112,5 +112,9 @@
              (bash-profile (list (plain-file "bash-profile" "\
 export HISTFILE=$XDG_CACHE_HOME/.bash_history")))))
 
-   )))
- 
+   (simple-service 'test-config
+                   home-xdg-configuration-files-service-type
+                   (list `("test.conf"
+                           ,(plain-file "tmp-file.txt"
+                                        "the content of
+                                          ~/.config/test.conf")))))))

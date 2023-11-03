@@ -1,4 +1,5 @@
 #+BEGIN_SRC sh
+guix install git
+git clone https://github.com/peterpolidoro/home-config.git
+guix home reconfigure ~/home-config/home-config.scm
 #+END_SRC
-
-* System Installation
