@@ -1,5 +1,7 @@
 #+BEGIN_SRC sh
 guix install git
 git clone https://github.com/peterpolidoro/.home-config.git
-guix home reconfigure ~/.home-config/home-config.scm
+cd .home-config
+guix home reconfigure home-config.scm
+guix shell -m manifests/emacs.scm
 #+END_SRC
