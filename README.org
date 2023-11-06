@@ -1,8 +1,22 @@
+* Install
+
 #+BEGIN_SRC sh
 guix install git
 git clone https://github.com/peterpolidoro/.home-config.git
 cd .home-config
 guix home reconfigure home-config.scm
+#+END_SRC
+
+* Emacs
+
+#+BEGIN_SRC sh
 guix shell -m manifests/emacs.scm
 ln -s ~/.home-config/emacs ~/.config/emacs
+#+END_SRC
+
+* Update
+
+#+BEGIN_SRC sh
+guix pull
+sudo guix system reconfigure /etc/config.scm
 #+END_SRC
